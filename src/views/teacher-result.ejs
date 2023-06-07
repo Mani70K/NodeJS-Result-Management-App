@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Teacher Add Student Page</title>
+</head>
+<body>
+    <%-include("./partials/header")%>
+    <b><a href="/teacherHome" class="ml-10 mt-10">Back</a></b>
+    <br>
+    <br>
+    <div class="mt-60 ml-140">
+    <b>Add New Result</b>
+    <br>
+    <br>
+        <form action="/api/students/addStudent" method="post">
+            <table class="ml-12">
+                <tr>            
+                    <td>Roll No.</td>
+                    <td ><input name="Roll" type="text" placeholder="Enter Roll No"></td>
+                </tr>
+                <tr>            
+                    <td>Name</td>
+                    <td><input name="Name"type="text" placeholder="Enter Name"></td>
+                </tr>    
+                <tr>            
+                    <td>Date Of Birth</td>
+                    <td><input name="DOB" type="text" placeholder="Enter D.O.B"></td>
+                </tr>                
+                <tr>            
+                    <td>Score</td>
+                    <td><input name="Score" type="text" placeholder="Enter Score"></td>
+                </tr>
+    
+            </table>
+            <!-- <a class="btn btn-blue mt-36 ml-40" href="/teacherHome">Submit</a> -->
+            <button class="btn-blue mt-36 ml-40" type="submit">Submit</button>
+            <a class="btn btn-white" href="/teacherAdd">Clear</a>
+            
+            
+        </form>
+    </div>
+</body>
+</html>

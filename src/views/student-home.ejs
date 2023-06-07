@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("./partials/header")%>
+    <div class="table-center">
+        <b >Find Result</b>
+        <br>
+        <br>
+        <form action="/studentResult" method="post">
+        <table class="">
+            <tr>            
+                <td>Roll No.</td>
+                <td><input name="Roll" type="text" placeholder="Enter Roll No" required></td>
+            </tr>
+            <tr>            
+                <td>Name</td>
+                <td><input name="Name" type="text" placeholder="Enter Name" required></td>
+            </tr>
+
+        </table>
+        <br>
+        <!-- <a class="btn btn-blue" href="/studentResult">Search</a> -->
+        <button class="btn-blue" type="submit">Search</button>
+        <a class="btn btn-white" href="/studentHome">Clear</a>
+    </form>
+    </div>
+</body>
+</html>
